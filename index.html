@@ -8,16 +8,17 @@
     <link rel="stylesheet" type="text/css" href="content.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <meta charset="UTF-8">
 
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="animate.js"></script>
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
-                <li >O nama</li>
-                <li>Članovi</li>
+                <li onclick="showOnama()">O nama</li>
+                <li onclick="showClanovi()">Članovi</li>
                 <li>Repertoar</li>
                 <li>Događaji</li>
                 <li>Galerija</li>
@@ -29,12 +30,12 @@
         </div>
     </header>
     <main>
+
+
+
         <div class="o-nama">
 
-            <div class="o-nama-block"
-            data-aos="flip-right"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="1500">
+            <div class="o-nama-block" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
                 <div class="o-nama-title">
                     <h2>Tko smo mi?</h2>
                 </div>
@@ -44,7 +45,7 @@
                         Kristijan Freiberger i Fran Komlinović. Bend postoji od 2001., a u svojoj dugoj
                         povijesti bilježi nastupe u najrazličitijim prostorima i prigodama:
                         od najmanjih kafića, sala za svadbe, restorana, klubova, sportskih
-                        dvorana pa čak i stadiona. Radili smo autorske stvrari, ali i
+                        dvorana pa čak i stadiona. Radili smo autorske stvari, ali i
                         surađivali sa zvijezdama hrvatske estrade.
                     </p>
                     <div class="o-nama-thumb">
@@ -53,10 +54,7 @@
                 </div>
             </div>
 
-            <div class="o-nama-block"
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="1500">
+            <div class="o-nama-block" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
                 <div class="o-nama-title">
                     <h2>Autorski rad</h2>
                 </div>
@@ -76,10 +74,7 @@
                 </div>
             </div>
 
-            <div class="o-nama-block"
-            data-aos="flip-right"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="1500">
+            <div class="o-nama-block" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
                 <div class="o-nama-title">
                     <h2>Što sada radimo?</h2>
                 </div>
@@ -96,10 +91,7 @@
                 </div>
             </div>
 
-            <div class="o-nama-block"
-            data-aos="flip-right"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="1500">
+            <div class="o-nama-block" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
                 <div class="o-nama-title">
                     <h2>Može jedna narodna?</h2>
                 </div>
@@ -117,6 +109,121 @@
 
         </div>
 
+        <div class="clanovi">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="images/mario.jpg" alt="Bass">
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Mario Ivičić</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="images/tin.jpg" alt="Bass">
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Tin Komlinović</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="images/hans.jpg" alt="Bass">
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Kristijan Freiberger</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="images/bobo.jpg" alt="Bass">
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Bobo Novaković</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="images/marko.jpg" alt="Bass">
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Marko Nedug</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="images/fran.jpg" alt="Bass">
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Fran Komlinović</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
     <footer>
