@@ -2,4 +2,4 @@
 Ruswaj
 
 
-napravi folder "images" i u njega utrpaj slike
+Fran ima malog pišu
