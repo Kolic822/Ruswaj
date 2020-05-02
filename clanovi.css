@@ -59,7 +59,7 @@
   }
   /* Style the back side */
   .flip-box-back {
-    background-color:#BDBDEF;
+    background-color:#96031A;
     color: white;
     transform: rotateY(180deg);
     border-radius: 10px;
