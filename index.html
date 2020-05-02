@@ -4,37 +4,53 @@
     <title>
         Ruswaj
     </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="header.css">
     <link rel="stylesheet" type="text/css" href="content.css">
+    <link rel="stylesheet" type="text/css" href="clanovi.css">
+    <link rel="stylesheet" type="text/css" href="kontakt.css">
+    <link rel="stylesheet" type="text/css" href="repertoar.css">
+    <link rel="stylesheet" type="text/css" href="events.css">
+    <link rel="stylesheet" type="text/css" href="galerija.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <link rel="icon" href="images/logoBlack.png">
     <meta charset="UTF-8">
-    <script type="text/javascript" src="animate.js"></script>
 </head>
 
 <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0">
+    </script>
     <header>
         <nav>
             <ul>
                 <li onclick="showOnama()">O nama</li>
                 <li onclick="showClanovi()">Članovi</li>
-                <li>Repertoar</li>
-                <li>Događaji</li>
-                <li>Galerija</li>
-                <li>Kontakt</li>
+                <li onclick="showRepertoar()">Repertoar</li>
+                <li onclick="showEvents()">Događaji</li>
+                <li onclick="showGalerija()">Galerija</li>
+                <li onclick="showKontakt()">Kontakt</li>
             </ul>
         </nav>
         <div class="logoContainer">
             <img id="logoImg" src="images/logoBlack.png">
         </div>
     </header>
+
     <main>
 
-
+        <div class="showImg">
+            <div id="closeOverlay" onclick="closeImg()">X</div>
+            <div class="imgContainer">
+                <img id="presentation" src="">
+            </div>
+        </div>
+        <!-- <div class="display">
+        </div> -->
 
         <div class="o-nama">
-
+            <h1 class="heading">O nama</h1>
             <div class="o-nama-block" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
                 <div class="o-nama-title">
                     <h2>Tko smo mi?</h2>
@@ -110,6 +126,7 @@
         </div>
 
         <div class="clanovi">
+            <h1 class="heading">Članovi</h1>
             <div class="flip-box">
                 <div class="flip-box-inner">
                     <div class="flip-box-front">
@@ -225,12 +242,142 @@
             </div>
         </div>
 
+        <div class="kontakt">
+            <h1 class="heading">Kontakt</h1>
+
+            <h2>Kontaktirajte nas putem poziva ili društvenih mreža</h2>
+            <h3>Klikni na ikonu!</h3>
+
+
+            <div class="kontakt-grid">
+                <a href="tel:+385-98-527-671" target="blank">
+                    <div class="kontakt-blok">
+                        <img src="images/phone.png" title="098-527-671">
+                    </div>
+                </a>
+                <div class="kontakt-grid">
+                    <a href="https://www.facebook.com/RuswajOfficial/?epa=SEARCH_BOX" target="blank">
+                        <div class="kontakt-blok">
+                            <img src="images/fb.png" title="www.facebook.com/RuswajOfficial/?epa=SEARCH_BOX">
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/grupa_ruswaj/?hl=hr" target="blank">
+                        <div class="kontakt-blok">
+                            <img src="images/ig.png" title="www.instagram.com/grupa_ruswaj/?hl=hr">
+                        </div>
+                    </a>
+                    <a href="https://www.youtube.com/user/gruparuswaj" target="blank">
+                        <div class="kontakt-blok">
+                            <img src="images/yt.png" title="www.youtube.com/user/gruparuswaj">
+                        </div>
+                    </a>
+                    <a href="mailto:gruparuswaj@gmail.com">
+                        <div class="kontakt-blok">
+                            <img src="images/mail.png" title="gruparuswaj@gmail.com">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="repertoar">
+            <div class="rep-container">
+                <h1 class="heading">Pogledajte naš repertoar!</h1>
+                <iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist
+                =true&width=700&height=350&color=ff0000&layout=dark&size=medium&type=playlist&id=7533223722&app_id=1"
+                    width="700" height="350">
+                </iframe>
+            </div>
+        </div>
+
+        <div class="galerija">
+            <h1 class="heading">Gallery</h1>
+
+            <div class="row-block" onclick="toggleOverlay(this.children[0].getAttribute('src'))">
+                <img class="gallery-img" src="images/1.jpg">
+            </div>
+            <div class="row-block" onclick="toggleOverlay(this.children[0].getAttribute('src'))">
+                <img class="gallery-img" src="images/2.jpg">
+            </div>
+            <div class="row-block" onclick="toggleOverlay(this.children[0].getAttribute('src'))">
+                <img class="gallery-img" src="images/1.jpg">
+            </div>
+            <div class="row-block" onclick="toggleOverlay(this.children[0].getAttribute('src'))">
+                <img class="gallery-img" src="images/1.jpg">
+            </div>
+            <div class="row-block" onclick="toggleOverlay(this.children[0].getAttribute('src'))">
+                <img class="gallery-img" src="images/1.jpg">
+            </div>
+            <div class="row-block" onclick="toggleOverlay(this.children[0].getAttribute('src'))">
+                <img class="gallery-img" src="images/1.jpg">
+            </div>
+            <div class="row-block" onclick="toggleOverlay(this.children[0].getAttribute('src'))">
+                <img class="gallery-img" src="images/1.jpg">
+            </div>
+            <div class="row-block" onclick="toggleOverlay(this.children[0].getAttribute('src'))">
+                <img class="gallery-img" src="images/1.jpg">
+            </div>
+            <div class="row-block" onclick="toggleOverlay(this.children[0].getAttribute('src'))">
+                <img class="gallery-img" src="images/1.jpg">
+            </div>
+            <div class="row-block" onclick="toggleOverlay(this.children[0].getAttribute('src'))">
+                <img class="gallery-img" src="images/1.jpg">
+            </div>
+            <div class="row-block" onclick="toggleOverlay(this.children[0].getAttribute('src'))">
+                <img class="gallery-img" src="images/1.jpg">
+            </div>
+            <div class="row-block" onclick="toggleOverlay(this.children[0].getAttribute('src'))">
+                <img class="gallery-img" src="images/1.jpg">
+            </div>
+            <div class="row-block" onclick="toggleOverlay(this.children[0].getAttribute('src'))">
+                <img class="gallery-img" src="images/1.jpg">
+            </div>
+            <div class="row-block" onclick="toggleOverlay(this.children[0].getAttribute('src'))">
+                <img class="gallery-img" src="images/1.jpg">
+            </div>
+            <div class="row-block" onclick="toggleOverlay(this.children[0].getAttribute('src'))">
+                <img class="gallery-img" src="images/1.jpg">
+            </div>
+            <div class="row-block" onclick="toggleOverlay(this.children[0].getAttribute('src'))">
+                <img class="gallery-img" src="images/1.jpg">
+            </div>
+        </div>
+
+        <div class="events">
+            <h1 class="heading">Nadolazeći događaji</h1>
+            <div class="fb-post" data-href="https://www.facebook.com/RuswajOfficial/posts/10158227329636941:0"
+                data-show-text="true" data-width="">
+                <blockquote cite="https://developers.facebook.com/RuswajOfficial/posts/10158227329636941:0"
+                    class="fb-xfbml-parse-ignore">
+                    <p>Lagano se pripremamo za svirku na Zelenoj noći. Aukcija u tijeku, a Ruswaj kreće odmah nakon
+                        večere...</p>
+                    Posted by <a href="https://www.facebook.com/RuswajOfficial/">
+                        Ruswaj</a> on&nbsp;
+                    <a href="https://developers.facebook.com/RuswajOfficial/posts/10158227329636941:0">
+                        Saturday, February 29, 2020</a>
+                </blockquote>
+            </div>
+
+
+            <div class="event-plugin">
+                <div class="fb-page" data-href="https://www.facebook.com/RuswajOfficial/events/?ref=page_internal"
+                    data-tabs="events" data-width="500" data-height="auto" data-small-header="false"
+                    data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/RuswajOfficial/events/?ref=page_internal"
+                        class="fb-xfbml-parse-ignore">
+                        <a href="https://www.facebook.com/RuswajOfficial/events/?ref=page_internal">
+                            Ruswaj
+                        </a>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
-
+        <div id="toTop">^</div>
     </footer>
 </body>
-
+<script type="text/javascript" src="animate.js"></script>
 <script>
     AOS.init();
 </script>

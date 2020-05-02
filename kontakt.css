@@ -1,0 +1,40 @@
+.kontakt{
+    margin-top:150px;
+    display:none;
+    text-align: center;
+}
+
+.kontakt-grid{
+    margin:0 auto; 
+    text-align: center;
+    display:inline-block;
+}
+
+.kontakt-grid a{
+    display:inline-block;
+}
+
+.kontakt-blok{
+    border-radius: 50%;
+    width:150px;
+    height: 150px;
+    margin:20px;
+    transition:0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.50);
+    overflow: hidden;
+}
+
+.kontakt-blok:hover {
+    transition-timing-function: ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 5px 40px 0 rgba(0, 0, 0, 1);
+    transition:0.3s;
+    width:151px;
+    height: 151px;
+
+}
+
+.kontakt-blok img{
+    width:100%;
+    height: auto;
+}
+

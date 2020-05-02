@@ -1,6 +1,6 @@
 body{
     margin:0;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     background-color: FFF9e7;
 }
 
@@ -11,7 +11,7 @@ main{
 
 h2{
     font-size:1.6em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .o-nama{
@@ -49,75 +49,32 @@ h2{
     height: auto;
 }
 
-.clanovi{
-    margin:150px auto;
-    text-align: center;
-    display:none;
-  }
+.heading{
+    font-size:3em;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin:100px 0px;
+}
 
-
-/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-box {
-    background-color: transparent;
-    width: 450px;
-    height: 500px;
-    perspective: 1000px;
-    display:inline-block;
-    margin:10px;
-    border-radius: 10px;
-  }
-
-  /* This container is needed to position the front and back side */
-  .flip-box-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-    border-radius: 10px;
-  }
-
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-box:hover .flip-box-inner {
-    transform: rotateY(180deg);
-  }
-
-  /* Position the front and back side */
-  .flip-box-front, .flip-box-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-
-  /* Style the front side (fallback if image is missing) */
-  .flip-box-front {
-    background-color: #bbb;
-    color: black;
-    border-radius: 10px;
-  }
-
-  .flip-box-front img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: 100%;
-    border-radius:10px;
-  }
-  /* Style the back side */
-  .flip-box-back {
-    background-color:#BDBDEF;
+#toTop{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(64, 64, 128);
     color: white;
-    transform: rotateY(180deg);
-    border-radius: 10px;
-  }
-  .flip-box-back h2{
-      font-size: 2em;
-  }
-  .flip-box-back p{
-      padding:50px;
-      font-size: 1.4em;
-  }
+    text-align: center;
+    line-height: 60px;
+    font-size:2em;
+    opacity:1;
+    transition:0.2s;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    cursor:pointer;
+    display:none;
+}
+#toTop:hover{
+    background-color:rgb(77, 77, 124);
+    color:whitesmoke;
+    transition:0.2s;
+    border-radius:30px;
+}
