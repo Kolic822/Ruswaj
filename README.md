@@ -2,4 +2,3 @@
 Ruswaj
 
 
-Fran ima malog pišu
